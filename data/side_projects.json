@@ -1,0 +1,132 @@
+{
+  "title": "Side Projects",
+  "icon": "bi bi-kanban",
+  "list": [
+    {
+      "title": "c-hls-dash-video-processor",
+      "url": "https://github.com/AhmedAbouelkher/c-hls-dash-video-processor",
+      "description": "A small C CLI that validates a source video, generates adaptive bitrate MP4 variants, extracts audio when present, creates a thumbnail, and packages the result as HLS or combined HLS + DASH. It relies on libavformat/libavcodec for metadata and libgpac for processing and packaging."
+    },
+    {
+      "title": "c_snellslens",
+      "url": "https://github.com/AhmedAbouelkher/c_snellslens",
+      "description": "Raylib demo that simulates a glass lens using Snell's law in vector form, with CPU and GPU shader implementations.",
+      "image": "snells_shader_gpu_result.jpg",
+      "image_size": "60%"
+    },
+    {
+      "title": "micro_market",
+      "url": "https://github.com/AhmedAbouelkher/micro_market",
+      "description": "A small microservices demo built around checkout, inventory, and invoice workflows. The repo mixes Go and C services: checkout and inventory focus on request handling and telemetry, while invoice-service stores invoice data in SQLite, listens to Redis events, and generates PDFs in C."
+    },
+    {
+      "title": "Mandelbrot_Fractal_Renderer",
+      "url": "https://github.com/AhmedAbouelkher/Mandelbrot_Fractal_Renderer",
+      "description": "Classic complex-plane fractals: Mandelbrot, Julia, and Newton.",
+      "image": "mandelbrot_2.png",
+      "image_size": "50%"
+    },
+    {
+      "title": "fluid_Simulation",
+      "url": "https://github.com/AhmedAbouelkher/fluid_simulation",
+      "description": "A passion project implementing an Eulerian fluid solver in C, inspired by my studies in physics and computer science. This is an in-progress simulator that captures fluid motion, incompressibility, and smoke advection.",
+      "image": "fluid_sim_frame.jpg",
+      "image_size": "70%"
+    },
+    {
+      "title": "go-particle_simulation",
+      "url": "https://github.com/AhmedAbouelkher/go-particle_simulation",
+      "description": "A Go and Raylib particle simulation using cellular automata, inspired by falling sand games and Noita.",
+      "image": "particles_sim.gif",
+      "image_size": "70%"
+    },
+    {
+      "title": "waview",
+      "url": "https://github.com/AhmedAbouelkher/waview",
+      "description": "A simple C and Raylib audio visualizer.",
+      "image": "waview_v2_frame.jpg",
+      "image_size": "50%"
+    },
+    {
+      "title": "c_spectrogram",
+      "url": "https://github.com/AhmedAbouelkher/c_spectrogram",
+      "description": "A high-performance STFT spectrogram visualizer in C with a custom radix-2 FFT, Hamming windowing, and real-time Raylib rendering."
+    },
+    {
+      "title": "go-fft-raylib-impl",
+      "url": "https://github.com/AhmedAbouelkher/go-fft-raylib-impl",
+      "description": "A high-performance 2D FFT in Go using the Cooley-Tukey algorithm for image frequency-domain analysis."
+    },
+    {
+      "title": "ffmpeg_ply",
+      "url": "https://github.com/AhmedAbouelkher/ffmpeg_ply",
+      "description": "A simple ffplay clone in C using FFmpeg and SDL."
+    },
+    {
+      "title": "go-hls-dash-video-processor",
+      "url": "https://github.com/AhmedAbouelkher/go-hls-dash-video-processor",
+      "description": "A Go video service that transcodes videos into HLS and MPEG-DASH with FFmpeg."
+    },
+    {
+      "title": "yt_captions_download",
+      "url": "https://github.com/AhmedAbouelkher/yt_captions_download",
+      "description": "A Go tool for downloading and converting YouTube captions/subtitles into multiple formats."
+    },
+    {
+      "title": "omailer",
+      "url": "https://github.com/AhmedAbouelkher/omailer",
+      "description": "A minimal Go library for sending HTML email over SMTP with inline styling."
+    },
+    {
+      "title": "hls_downloader",
+      "url": "https://github.com/AhmedAbouelkher/hls_downloader",
+      "description": "A robust and feature-rich HLS (HTTP Live Streaming) downloader written in Go, inspired by hls-downloader.",
+      "image": "https://github.com/AhmedAbouelkher/hls_downloader/raw/main/images/downloader.gif"
+    },
+    {
+      "title": "spock-websocket",
+      "url": "https://github.com/AhmedAbouelkher/spock-websocket",
+      "description": "a simple websocket server that can be used to send messages to clients in real time. The project consists of a websocket server written in Go, a web client written in HTML, CSS, and Javascript, and a mobile app written in Flutter."
+    },
+    {
+      "title": "VTT-Untertitle-parser",
+      "url": "https://github.com/AhmedAbouelkher/VTT-Untertitle-parser",
+      "description": "A handy tool to parse the untertitles of the movies and series that I watch and translate them to English or any other language of your choice."
+    },
+    {
+      "title": "ocpp-emulator-go",
+      "url": "https://github.com/AhmedAbouelkher/ocpp-emulator-go",
+      "description": "This is a dummy OCPP charging point implementation in Golang. It is a simple implementation that can be used to test OCPP 1.6 central systems."
+    },
+    {
+      "title": "hack_vm_translator",
+      "url": "https://github.com/AhmedAbouelkher/hack_vm_translator",
+      "description": "A VM translator for Nand2Tetris that converts stack-based VM code to Hack assembly language. Implements both Project 7 (basic stack operations) and Project 8 (program flow and function calling) functionality."
+    },
+    {
+      "title": "hack_assembler_go",
+      "url": "https://github.com/AhmedAbouelkher/hack_assembler_go",
+      "description": "A Go implementation of a Hack assembler that converts assembly code to binary machine code for the Hack computer architecture (Nand2Tetris Project 6)."
+    },
+    {
+      "title": "clean_flutter_build",
+      "url": "https://github.com/AhmedAbouelkher/clean_flutter_build",
+      "description": "Clean Flutter apps and reduce code size to free disk space."
+    },
+    {
+      "title": "gr_zoom",
+      "url": "https://github.com/AhmedAbouelkher/gr_zoom",
+      "description": "A Flutter plugin for Zoom Client SDK."
+    },
+    {
+      "title": "security_tester",
+      "url": "https://github.com/AhmedAbouelkher/security_tester",
+      "description": "A Flutter library that detects suspicious apps and abnormal environments."
+    },
+    {
+      "title": "flutter_socket_io_chat",
+      "url": "https://github.com/AhmedAbouelkher/flutter_socket_io_chat",
+      "description": "A demo app that teaches how to build a simple Socket.IO chat."
+    }
+  ]
+}

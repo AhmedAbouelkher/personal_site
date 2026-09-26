@@ -1,0 +1,39 @@
+{
+  "title": "Skills",
+  "panelId": "skill-panel",
+  "icon": "bi bi-list-check",
+  "list": [
+    {
+      "title": "Electrical Engineering",
+      "skill": "Circuit Analysis, Troubleshooting, Power Electronics, Control Systems, Signal Processing."
+    },
+    {
+      "title": "Simulation & Modeling",
+      "skill": "Numerical Methods, Fluid Simulation, Particle Simulation, GPU Programming, Data Visualization."
+    },
+    {
+      "title": "Programming",
+      "skill": "Java, Javascript/TypeScript, Node.js, Go, Python, SQL"
+    },
+    {
+      "title": "Backend Development",
+      "skill": "Spring Boot, REST APIs, WebSockets, PostgreSQL, Redis, jOOQ, Schema Design, Query Optimization"
+    },
+    {
+      "title": "Software Engineering",
+      "skill": "System Design, Technical Documentation, Technical Specifications, Legacy Code Maintenance, Performance Optimization, Testing, Debugging"
+    },
+    {
+      "title": "Tools / DevOps",
+      "skill": "Git, GitHub Actions, Docker, Linux, CI/CD, Prometheus, Grafana"
+    },
+    {
+      "title": "Working Style",
+      "skill": "Structured Problem Solving, Independent Work, Cross Functional Collaboration, Communication"
+    },
+    {
+      "title": "Web Basics",
+      "skill": "Basic knowledge of HTML and CSS."
+    }
+  ]
+}

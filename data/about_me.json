@@ -1,0 +1,9 @@
+{
+  "title": "About **`Me`**",
+  "icon": "bi bi-person",
+  "description": [
+    "Electrical Engineering MSc student at FH OÖ with a background in simulation, control systems, signal processing, and programming.",
+    "Experienced in C/C++, Python, MATLAB, Java, and Bash, with hands-on work in simulation, data analysis, code optimization, and technical problem solving.",
+    "Completed projects in fluid simulation, particle simulation, audio visualization, and GPU-based rendering."
+  ]
+}

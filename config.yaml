@@ -1,0 +1,40 @@
+baseURL: /
+locale: en-us
+build:
+  writeStats: true
+title: Ahmed Abouelkheir - Profile
+# Uncomment below to use aafu as hugo theme. See instructions in README.md
+theme: aafu
+
+params:
+  author: Ahmed Abouelkheir
+  description: Ahmed Abouelkheir's personal website
+  theme:
+    mainTheme: null
+    showAttribute: false
+    singlePage: true
+  # Set to true to show the Blog link in the nav
+  showBlog: false
+  accordion:
+    - item: about_me
+    - item: experience
+      expand: false
+    - item: education
+      expand: false
+    # - item: publications
+    - item: side_projects
+    - item: skills
+      expand: false
+      panel_id: skill-panel
+    # - item: hobbies
+
+# Allow Hugo to run the Tailwind CSS v4 CLI used by `css.TailwindCSS`
+security:
+  exec:
+    allow:
+      - ^(dart-)?sass$
+      - ^go$
+      - ^git$
+      - ^node$
+      - ^postcss$
+      - ^tailwindcss$

@@ -1,0 +1,19 @@
+{{ range hugo.Data.side_projects.list }}
+{{ $project := . }}
+<h4>
+  <a href="{{ .url }}">{{- .title -}}</a>
+</h4>
+<p class="markdownify indent-8 mb-2">{{- .description | markdownify -}}</p>
+{{ with .image }}
+{{ $src := . }}
+{{ if not (or (hasPrefix . "http") (hasPrefix . "//")) }}
+{{ $path := strings.TrimPrefix "/" . }}
+{{ if not (hasPrefix $path "images/") }}{{ $path = printf "images/%s" $path }}{{ end }}
+{{ with resources.Get $path }}{{ $src = .RelPermalink }}{{ else }}{{ $src = $path | relURL }}{{ end }}
+{{ end }}
+<a href="{{ $project.url }}">
+  <img class="rounded-sm my-2" src="{{ $src }}" alt="{{ $project.title }} preview" loading="lazy"
+    style="max-width: 100%;{{ with $project.image_size }} width: {{ . }}; height: auto;{{ end }}" />
+</a>
+{{ end }}
+{{ end }}

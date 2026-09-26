@@ -1,0 +1,86 @@
+{
+  "title": "Experience",
+  "icon": "bi bi-briefcase",
+  "list": [
+    {
+      "position": "Research Assistant",
+      "dates": "2026 - *Present*",
+      "url": "https://silicon-austria-labs.com/en/",
+      "company": "Silicon Austria Labs (SAL)",
+      "location": "Linz, Austria"
+    },
+    {
+      "position": "Software Engineer (Fulltime / Freelance)",
+      "dates": "2023 - 2026",
+      "company": "EZ Marketing LLC - Fully Charged",
+      "location": "Dubai, UAE",
+      "url": "https://www.fullycharged.ae/",
+      "details": [
+        "Owned the design, delivery, and production operations of Java and Go microservices for the Fully Charged EV platform, supporting roughly 12,000 charging sessions/month with 99.9% uptime and reliable customer experience.",
+        "Worked closely with business stakeholders and operational teams to understand customer use cases, translate requirements into backend capabilities, and improve product adoption across charging workflows.",
+        "Served as a frontline technical resource for charger integrations by implementing and maintaining OCPP 1.6J communication and OCPI roaming flows across multi-vendor environments.",
+        "Improved platform performance and customer experience by optimizing PostgreSQL and Redis usage, reducing API latency by about 35% and lowering database load by about 40%.",
+        "Strengthened observability and issue resolution through Prometheus, Grafana, structured logging, alerts, runbooks, and postmortems, helping teams detect problems faster and reduce MTTR.",
+        "Partnered with engineers and internal stakeholders on safer releases, diagnostics tooling, and CI/CD automation, improving rollout quality, reducing rollback incidents, and documenting operational best practices."
+      ]
+    },
+    {
+      "position": "Software Engineer",
+      "dates": "2022 - 2023",
+      "company": "Omegastream",
+      "url": "https://www.omegastream.net",
+      "location": "Cairo, Egypt",
+      "details": [
+        "Designed and implemented a Go backend for video storage and streaming serving 100M+ monthly requests, while working closely with customers and internal stakeholders to understand usage patterns, pain points, and feature needs.",
+        "Acted as a customer-facing technical partner in a startup environment, helping translate business and client requirements into scalable backend services and stable low-latency playback experiences.",
+        "Built and optimized microservices and delivery workflows for reliability, performance, and growth, enabling fault-tolerant content delivery during peak traffic.",
+        "Improved customer success and operational visibility by implementing monitoring, alerting, and real-time service metrics that supported faster troubleshooting and data-driven performance tuning.",
+        "Collaborated across engineering and product discussions to prioritize fixes, support feature adoption, and improve the end-user experience based on customer feedback and operational trends.",
+        "Automated CI/CD and documented technical best practices, enabling faster low-risk releases and improving service stability in production."
+      ]
+    },
+    {
+      "position": "Software Engineer",
+      "dates": "2023 - 2025",
+      "company": "Rizme",
+      "url": "https://rizme.net/",
+      "location": "Cairo, Egypt",
+      "details": [
+        "Worked directly with customers across multiple client projects to understand business goals, technical requirements, and user pain points, then translated them into mobile product solutions.",
+        "Led and contributed to the delivery of high-impact applications across e-commerce, transportation, IoT, and social platforms, balancing customer expectations with technical execution and product quality.",
+        "Acted as a trusted technical partner for clients by advising on feature feasibility, implementation tradeoffs, release priorities, and best practices throughout the development lifecycle.",
+        "Contributed to customer success by improving app quality, maintainability, and adoption through unit testing, performance optimization, and reliable production delivery.",
+        "Worked on applications such as G.Ride, CardoO, Game3at, and Cyne HCPs, supporting real user needs through scalable mobile features, IoT integrations, and SDK development.",
+        "Delivered solutions for more than 10 clients, including several high-growth and viral applications, while maintaining strong communication and responsiveness throughout project execution."
+      ]
+    },
+    {
+      "position": "Software Engineer",
+      "dates": "2021 - 2022",
+      "company": "Kopii.ae",
+      "url": "https://www.kopii.ae/",
+      "location": "Dubai, UAE",
+      "details": [
+        "Built and maintained Node.js microservices for core business workflows, supporting reliable backend operations and customer-facing subscription and payment experiences.",
+        "Integrated Stripe payments end-to-end, including checkout, webhooks, refunds, and recurring billing, while ensuring stable transaction handling and strong customer trust.",
+        "Worked with product and frontend teams to understand business requirements, improve API usability, and support smooth feature rollout for customer-facing services.",
+        "Improved service reliability and issue resolution by adding structured logging, operational dashboards, and retry-safe webhook processing with idempotency controls.",
+        "Optimized backend performance for critical endpoints to stay under 500 ms and contributed to infrastructure improvements that significantly reduced downtime.",
+        "Helped modernize a legacy codebase and stabilize payment migration workflows, supporting high availability, safe rollout, and minimal disruption to customers."
+      ]
+    },
+    {
+      "position": "Freelance Developer",
+      "dates": "2020 - 2023",
+      "company": "Freelance",
+      "details": [
+        "Worked directly with clients across multiple freelance projects to gather requirements, troubleshoot issues, recommend technical solutions, and deliver applications aligned with business needs.",
+        "Built mobile applications using Flutter, Swift, and Kotlin across education, fitness, media, and communications use cases, often serving as the primary technical point of contact.",
+        "Helped customers improve product quality and user experience by developing custom features, optimizing native video playback, and adapting third-party integrations for production use.",
+        "Contributed to open-source and client-facing tooling, including Flutter video player improvements and Zoom-related integrations, to support more reliable application behavior.",
+        "Supported 50+ developers and companies in publishing apps to the App Store and Play Store, guiding them through release requirements and helping reduce review delays.",
+        "Built long-term client trust through responsive communication, practical technical guidance, and consistent delivery across diverse project needs."
+      ]
+    }
+  ]
+}

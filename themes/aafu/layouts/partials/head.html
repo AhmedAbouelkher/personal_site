@@ -1,0 +1,112 @@
+<head>
+  {{ if .IsHome }}
+  <title>{{ .Site.Title }}</title>
+  {{ else }}
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  {{ end }}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="theme-color" content="" />
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta name="author" content="{{ .Site.Params.author }}" />
+  <link rel="icon" href="{{ `favicon.ico` | relURL }}" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono" />
+
+  {{ $css := resources.Get "main.css" | css.TailwindCSS }} {{ if
+  hugo.IsProduction }} {{ with $css | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity | safeHTMLAttr }}"
+    crossorigin="anonymous" />
+  {{ end }} {{ else}}
+  <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+  {{ end }}
+
+  <script>
+    const setSkillBars = (expand) => {
+      document.querySelectorAll("#skill-percent").forEach((bar) => {
+        bar.style.width = expand ? bar.classList[0] : "0";
+      });
+    };
+
+    const togglePanel = (header, expand) => {
+      const panel = header.nextElementSibling;
+      panel.style.maxHeight = expand ? panel.scrollHeight + "px" : null;
+      if (panel.id === "skill-panel") {
+        setSkillBars(expand);
+      }
+    };
+
+    const expandAccordion = (elem) => {
+      const header = elem.parentElement;
+      const isActive = header.classList.toggle("active");
+      togglePanel(header, isActive);
+    };
+  </script>
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.remove("bi-moon");
+          themeToggle.classList.add("bi-brightness-high");
+        } else {
+          themeToggle.classList.remove("bi-brightness-high");
+          themeToggle.classList.add("bi-moon");
+        }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
+    }
+
+    setTheme(theme);
+
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
+    const expandActivePanels = () => {
+      document.querySelectorAll(".accordion.active").forEach((header) => {
+        togglePanel(header, true);
+      });
+    };
+
+    window.onload = () => {
+      fixThemeToggleIcon(theme);
+      expandActivePanels();
+    };
+
+    window.onresize = expandActivePanels;
+  </script>
+</head>

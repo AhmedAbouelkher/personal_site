@@ -1,0 +1,12 @@
+{{ range hugo.Data.skills.list }}
+{{ if .title }}<h4 style="text-decoration: underline">{{ .title }}</h4>{{ end }}
+<code>{{ .skill }}</code>
+{{ if and (.skillrating) (gt .skillrating 0) }}
+<div class="w-full mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.1rem;">
+  <div id="skill-percent" class="{{ .skillrating }}% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm"
+    style="width: 0; transition: all 0.5s;"></div>
+</div>
+{{ else }}
+<div class="w-full mt-1 mb-3"></div>
+{{ end }}
+{{ end }}

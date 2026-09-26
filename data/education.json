@@ -1,0 +1,16 @@
+{
+  "title": "Education",
+  "icon": "bi bi-mortarboard",
+  "list": [
+    {
+      "degree": "M.S. in Electrical Engineering",
+      "college": "University of Applied Sciences Upper Austria - FH OÖ",
+      "dates": "2025 - 2027"
+    },
+    {
+      "degree": "B.S. in Electrical Engineering",
+      "college": "Alexandria University",
+      "dates": "2018 - 2024"
+    }
+  ]
+}
