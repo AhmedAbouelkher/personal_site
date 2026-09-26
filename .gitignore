@@ -9,3 +9,4 @@ public/*
 build.ps1
 .zed/
 *-lock.json
+.DS_Store
