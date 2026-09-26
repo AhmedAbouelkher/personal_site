@@ -2,6 +2,11 @@ baseURL: /
 locale: en-us
 build:
   writeStats: true
+# Store processed images in Hugo's cacheDir so Cloudflare's build cache can
+# reuse them between deploys.
+caches:
+  images:
+    dir: :cacheDir/images
 title: Ahmed Abouelkheir - Profile
 # Uncomment below to use aafu as hugo theme. See instructions in README.md
 theme: aafu

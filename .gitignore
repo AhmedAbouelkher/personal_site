@@ -9,4 +9,6 @@ public/*
 build.ps1
 .zed/
 *-lock.json
+# Track the root lockfile: Cloudflare's build cache requires it.
+!/package-lock.json
 .DS_Store
