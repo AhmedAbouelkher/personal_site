@@ -23,11 +23,12 @@ params:
   accordion:
     - item: about_me
     - item: experience
-      expand: false
+      # expand: false
     - item: education
       expand: false
     # - item: publications
     - item: side_projects
+      expand: false
     - item: skills
       expand: false
       panel_id: skill-panel
