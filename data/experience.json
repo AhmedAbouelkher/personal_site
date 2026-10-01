@@ -4,10 +4,14 @@
   "list": [
     {
       "position": "Research Assistant",
-      "dates": "2026 - *Present*",
+      "dates": "08-2026 - *Present*",
       "url": "https://silicon-austria-labs.com/en/",
       "company": "Silicon Austria Labs (SAL)",
-      "location": "Linz, Austria"
+      "location": "Linz, Austria",
+      "details": [
+        "Working with python this time to build high performance simulation software for beamforming software.",
+        "Working with CUDA to accelerate the simulation software in real-time."
+      ]
     },
     {
       "position": "Software Engineer (Fulltime / Freelance)",
